@@ -28,3 +28,13 @@ claims:
       - tools/verify_claims.py
       - tools/build_claim_bundle.py
       - verify_all.sh
+
+  - id: CLAIM-POC-001
+    title: Minimal PoC execution works
+    statement: |
+      The minimal executable PoC runs successfully and produces
+      verifiable evidence in a stable output format.
+    evidence_paths:
+      - poc/run_poc.py
+      - poc/verify_poc.sh
+      - out/poc/result.json
